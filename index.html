@@ -1,11 +1,136 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro código HTML</title>
+    <title>Receitas de Sobremesas</title>
 </head>
 <body>
-    Consegui fazer
+    <header>
+        <h1>Bem-vindo ao Site de Receitas de Sobremesas</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobremesas-populares">Sobremesas Populares</a></li>
+                <li><a href="#receita-torta-maca">Torta de Maçã</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobremesas-populares">
+        <h2>Sobremesas Populares</h2>
+        <img src="sobremesas.jpg" alt="Sobremesas Populares">
+        <p>Aqui estão algumas das sobremesas mais populares em nosso site:</p>
+        <ul>
+            <li><a href="#receita-torta-maca">Torta de Maçã</a></li>
+            <li><a href="#receita-sorvete-chocolate">Sorvete de Chocolate</a></li>
+            <li><a href="#receita-bolo-morango">Bolo de Morango</a></li>
+        </ul>
+    </section>
+    <hr>
+
+    <section id="receita-torta-maca">
+        <h2>Torta de Maçã</h2>
+        <img src="images/torta-de-maca.jpg" alt="Torta de Maçã">
+        <p>Uma torta de maçã clássica com uma massa crocante e recheio de maçãs doces e canela. Perfeita para qualquer ocasião!</p>
+        <h3>Ingredientes</h3>
+        <table>
+            <tr>
+                <td>Maçãs</td>
+                <td>4 unidades</td>
+            </tr>
+            <tr>
+                <td>Açúcar</td>
+                <td>1 xícara</td>
+            </tr>
+            <tr>
+                <td>Farinha de Trigo</td>
+                <td>1 xícara</td>
+            </tr>
+            <!-- Adicione mais ingredientes conforme necessário -->
+        </table>
+        <h3>Passos da Receita</h3>
+        <ol>
+            <li>Lave e descasque as maçãs, corte em fatias finas.</li>
+            <li>Misture as fatias de maçã com açúcar e canela em uma tigela.</li>
+            <li>Forre uma forma de torta com a massa e adicione o recheio de maçã.</li>
+            <li>Cubra a torta com outra camada de massa e faça pequenos cortes na parte superior.</li>
+            <li>Asse no forno a 180°C por 45 minutos ou até dourar.</li>
+        </ol>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ySDoOpg1shA?si=ILE2ZQRERgevfzd7" frameborder="0" allowfullscreen></iframe>
+    </section>
+    <hr>
+
+    <section id="receita-sorvete-chocolate">
+        <h2>Sorvete de Chocolate</h2>
+        <img src="images/sorvete-chocolate.jpg" alt="Sorvete de Chocolate">
+        <p>Uma deliciosa receita de sorvete de chocolate que vai encantar seu paladar. Simples de fazer e irresistivelmente gostoso!</p>
+        <h3>Ingredientes</h3>
+        <table>
+            <tr>
+                <td>Leite</td>
+                <td>2 xícaras</td>
+            </tr>
+            <tr>
+                <td>Cacau em pó</td>
+                <td>1/2 xícara</td>
+            </tr>
+            <!-- Adicione mais ingredientes conforme necessário -->
+        </table>
+        <h3>Passos da Receita</h3>
+        <ol>
+            <!-- Adicione os passos da receita aqui -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XVQ4PUeckrc?si=R16PPgZspionnG9F" frameborder="0" allowfullscreen></iframe>
+        </ol>
+    </section>
+    <hr>
+
+    <section id="receita-bolo-morango">
+        <h2>Bolo de Morango</h2>
+        <img src="images/bolo-morango.jpg" alt="Bolo de Morango">
+        <p>Um bolo incrivelmente fofo e saboroso, recheado com morangos frescos e coberto com chantilly. Uma sobremesa irresistível!</p>
+        <h3>Ingredientes</h3>
+        <table>
+            <tr>
+                <td>Morangos</td>
+                <td>1 xícara</td>
+            </tr>
+            <tr>
+                <td>Chantilly</td>
+                <td>2 xícaras</td>
+            </tr>
+            <!-- Adicione mais ingredientes conforme necessário -->
+        </table>
+        <h3>Passos da Receita</h3>
+        <ol>
+            <!-- Adicione os passos da receita aqui -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cQKf7j8BdM4?si=cGr8AKgUobvo1dUe" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </ol>
+    </section>
+    <hr>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Se você tiver alguma dúvida ou sugestão, entre em contato conosco:</p>
+        <form action="processar-contato.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+        <br>
+        <address>
+            Email: <a href="mailto:contato@receitasdesobremesas.com">contato@receitasdesobremesas.com</a><br>
+            Telefone: (11) 1234-5678
+        </address>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Receitas de Sobremesas</p>
+    </footer>
 </body>
 </html>
